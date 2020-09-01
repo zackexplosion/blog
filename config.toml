@@ -1,0 +1,10 @@
+baseURL = "https://blog.zackexplosion.fun"
+languageCode = "zh-tw"
+title = "廢宅筆記"
+theme = "color-your-world"
+  [params.style]
+  
+    # Dark mode as default
+    # User preferences (site/system settings) will still have priority over it
+    # The default is false
+    isDark = true
