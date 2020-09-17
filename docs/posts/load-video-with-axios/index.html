@@ -16,9 +16,6 @@
 
 
 
-  
-  
-  
 
 
 
@@ -32,9 +29,7 @@
 
 
 
-
-
-<title>Posts</title>
+<title>Load Video With Axios</title>
 
 
 
@@ -47,10 +42,8 @@
 
 
 
-  <link rel="canonical" href="https://blog.zackexplosion.fun/posts/">
   
-  
-  
+    <link rel="canonical" href="https://blog.zackexplosion.fun/posts/load-video-with-axios/">
   
 
 
@@ -61,18 +54,9 @@
 
 
 <meta property="og:site_name" content="廢宅筆記">
-<meta property="og:title" content="Posts">
+<meta property="og:title" content="Load Video With Axios">
 
-  <meta property="og:url" content="https://blog.zackexplosion.fun/posts/">
-
-
-
-
-
-
-
-
-  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blog.zackexplosion.fun/posts/load-video-with-axios/">
 
 
 
@@ -81,10 +65,28 @@
 
 
 
+  <meta property="og:type" content="article">
+  
+  
+    <meta property="article:published_time" content="2020-09-17">
+    <meta property="article:modified_time" content="2020-09-17">
+    <meta property="og:updated_time" content="2020-09-17">
+  
+
+  
+  
+  
+  
 
 
 
-  <link rel="alternate" type="application/rss+xml" href="https://blog.zackexplosion.fun/posts/index.xml" title="廢宅筆記">
+
+
+
+
+
+
+
 
 
 
@@ -116,12 +118,29 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https:\/\/blog.zackexplosion.fun",
-      "inLanguage": "en",
-      "name": "廢宅筆記",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebSite",
+        "@id": "https:\/\/blog.zackexplosion.fun"
+      },
+      "headline": "Load Video With Axios",
       "description": "",
-      "publisher": ""
+      
+      "url": "https:\/\/blog.zackexplosion.fun\/posts\/load-video-with-axios\/",
+      "inLanguage": "en",
+      "datePublished": "2020-09-17",
+      "dateModified": "2020-09-17",
+      "wordCount" : "38",
+      "publisher": {
+        "@type": "Person",
+        "name": ""
+      },
+      "author": {
+        "@type": "Person",
+        "name": "",
+        
+        
+      }
     }
   </script>
 
@@ -230,95 +249,26 @@
 
     <div class="filler">
       
-  
-  
-  
-  
-  
 
-  <main class="list">
+  <main>
+    <article>
+      <header>
+        
+        <h1>Load Video With Axios</h1>
 
-    
-    
-    
-    <h1>Posts</h1>
-    
-    
-
-      
-
-<ul class="posts">
-  
-  
-    
-    
+        
+          <p>
+            
+              Published on <time datetime="2020-09-17">2020-09-17</time>
+            
+          </p>
+        
+        
+        
+        
+      </header>
     
       
-    
-
-    <li>
-      <a class="btn" href="/posts/load-video-with-axios/" title="Load Video With Axios (2020-09-17)">
-        <p>Load Video With Axios</p>
-
-        
-          <time datetime="2020-09-17">2020-09-17</time>
-        
-      </a>
-    </li>
-  
-  
-    
-    
-    
-      
-    
-
-    <li>
-      <a class="btn" href="/posts/javascript-file-upload-cache/" title="加速 Javascript File Upload 開發流程/檔案預先選取/檔案儲存localstorage (2020-09-16)">
-        <p>加速 Javascript File Upload 開發流程/檔案預先選取/檔案儲存localstorage</p>
-
-        
-          <time datetime="2020-09-16">2020-09-16</time>
-        
-      </a>
-    </li>
-  
-  
-    
-    
-    
-      
-    
-
-    <li>
-      <a class="btn" href="/posts/macos-keyrepeat/" title="Macos Keyrepeat 速度調整 (2020-09-01)">
-        <p>Macos Keyrepeat 速度調整</p>
-
-        
-          <time datetime="2020-09-01">2020-09-01</time>
-        
-      </a>
-    </li>
-  
-  
-    
-    
-    
-      
-    
-
-    <li>
-      <a class="btn" href="/posts/capistrano-db-task-confrim/" title="Capistrano-db-task sync disable confirm 關閉確認視窗 (2020-09-01)">
-        <p>Capistrano-db-task sync disable confirm 關閉確認視窗</p>
-
-        
-          <time datetime="2020-09-01">2020-09-01</time>
-        
-      </a>
-    </li>
-  
-</ul>
-
       
 
 
@@ -338,13 +288,32 @@
 
 
 
-      
 
 
-    
 
+
+
+
+<p>昨天想說把檔案快取在 localstorage 可以減少上傳的步驟，結果被卡小問題卡著，後來想到直接用 ajax 載入本地檔案不是更輕鬆嗎？</p>
+<p>於是昨天的全部廢掉，改成這樣&hellip;&hellip;&hellip;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">DEV</span>) {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">testvideo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">request</span>({
+    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;/test.mov&#34;</span>,
+    <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;GET&#34;</span>,
+    <span style="color:#a6e22e">responseType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;blob&#34;</span> <span style="color:#75715e">// important
+</span><span style="color:#75715e"></span>  });
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$refs</span>.<span style="color:#a6e22e">video</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">createObjectURL</span>(<span style="color:#a6e22e">testvideo</span>.<span style="color:#a6e22e">data</span>);
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">video</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$refs</span>.<span style="color:#a6e22e">video</span>;
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">testvideo</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">arrayBuffer</span>();
+  <span style="color:#a6e22e">handleAudio</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">buffer</span>);
+}
+</code></pre></div><p>這樣可以省掉很多點來點去的時間&hellip;.</p>
+
+
+
+    </article>
   </main>
-  
+
 
     </div>
     
@@ -380,19 +349,14 @@
       </symbol>
       
       
-        <symbol viewBox="0 0 512 512" id="search">
-          <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/>
-        </symbol>
       
       
-      
-  <symbol viewBox="0 0 256 512" id="angle-right">
-    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/>
-  </symbol>
+  
+<symbol viewBox="0 0 448 512" id="hashtag">
+  <path d="M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z"/>
+</symbol>
 
-  <symbol viewBox="0 0 448 512" id="angle-double-right">
-    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/>
-  </symbol>
+
 
       
       

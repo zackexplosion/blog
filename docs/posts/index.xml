@@ -6,7 +6,18 @@
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 16 Sep 2020 13:32:42 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Sep 2020 12:15:03 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/posts/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Load Video With Axios</title>
+        <link>https://blog.zackexplosion.fun/posts/load-video-with-axios/</link>
+        <pubDate>Thu, 17 Sep 2020 12:15:03 +0800</pubDate>
+        
+        <guid>https://blog.zackexplosion.fun/posts/load-video-with-axios/</guid>
+        <description>昨天想說把檔案快取在 localstorage 可以減少上傳的步驟，結果被卡小問題卡著，後來想到直接用 ajax 載入本地檔案不是更輕鬆嗎？
+於是昨天的全部廢掉，改成這樣&amp;hellip;&amp;hellip;&amp;hellip;.
+if (DEV) { const testvideo = await request({ url: &amp;#34;/test.mov&amp;#34;, method: &amp;#34;GET&amp;#34;, responseType: &amp;#34;blob&amp;#34; // important  }); this.$refs.video.src = URL.createObjectURL(testvideo.data); this.video = this.$refs.video; const buffer = await testvideo.data.arrayBuffer(); handleAudio.call(this, buffer); } 這樣可以省掉很多點來點去的時間&amp;hellip;.</description>
+      </item>
+    
       <item>
         <title>加速 Javascript File Upload 開發流程/檔案預先選取/檔案儲存localstorage</title>
         <link>https://blog.zackexplosion.fun/posts/javascript-file-upload-cache/</link>
