@@ -1,5 +1,5 @@
 ---
-title: "簡易快速的顯示卡以太挖礦教學 Simple GPU Mining Eth Guide"
+title: "簡易又快速的顯卡以太幣挖礦教學 Simple GPU Mining Eth Guide"
 date: 2021-04-03T23:44:53+08:00
 draft: false
 ---
