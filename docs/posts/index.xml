@@ -6,9 +6,29 @@
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 17 Sep 2020 12:15:03 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 23:44:53 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/posts/index.xml" rel="self" type="application/rss+xml" />
       <item>
-        <title>Load Video With Axios</title>
+        <title>簡易快速的顯示卡以太挖礦教學 Simple GPU Mining Eth Guide</title>
+        <link>https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/</link>
+        <pubDate>Sat, 03 Apr 2021 23:44:53 +0800</pubDate>
+        
+        <guid>https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/</guid>
+        <description>首先，下載挖礦軟體  連結 (防毒可能會靠北)： 下載按我按我按我按我按我按我按我
+解壓縮後，打開資料夾 PhoenixMiner_5.5c_.....
+點兩下執行裡面的 0_Ethereum-binance.bat 即可開始挖礦，看到下面的畫面代表成功啦，詳細的內容後面再談。
+   咦？那這樣到底挖給誰？ 不要急！後面就會教你怎麼設定
+挖到自己的幣安礦池帳號  用預設值挖就會挖給我啦，感謝您的贊助！下面就來教大家如何挖到自己的帳號
+註冊幣安  首先要註冊幣安的礦池帳號，這是我找到最最最最最最好用的礦池了，每日約台北時間下午四點不限金額出金，一張卡挖礦也可以每天看得到你的收益，更是摸的到！
+主要的兩個步驟
+ 點這邊註冊 https://www.binance.com/zh-TW/register?ref=72254434 註冊完成之後到這頁 https://pool.binance.com/en  接著我們要設定幣安的挖礦帳號
+   按圖操作後會看到下面畫面
+   輸入你的帳號名稱之後記得選擇挖礦的帳號類型，這邊我們要挖的是以太幣，所以選擇 ethash
+設定挖礦程式  用任意一款文字編輯器打開 0_Ethereum-binance.bat 會看到
+PhoenixMiner.exe -powlim -40 -pool ethash.poolbinance.com:8888 -wal zackexplosion -worker rig1 -epsw x -asm 2 -dbg -1 -allpools 1 -mode 1 -coin eth pause 將其中這段 -wal zackexplosion 修改為你剛剛填寫的幣安挖礦帳號</description>
+      </item>
+    
+      <item>
+        <title>AJAX載入測試檔案 Load Video With Axios</title>
         <link>https://blog.zackexplosion.fun/posts/load-video-with-axios/</link>
         <pubDate>Thu, 17 Sep 2020 12:15:03 +0800</pubDate>
         
@@ -46,7 +66,10 @@ defaults write -g InitialKeyRepeat -int 12 # normal minimum is 15 (225 ms) defau
         
         <guid>https://blog.zackexplosion.fun/posts/capistrano-db-task-confrim/</guid>
         <description>工作上很常用到 cap production db:pull 來同步 production 環境上使用者產生的資料，雖然多問無礙，但每次都問實在很煩，特別是這種要跑一陣子 task 常常執行下去後就去幹別的事。
-總之，我從原始碼找到這個 SKIP_DATA_SYNC_CONFIRM 參數，搭配 direnv 設定後以後就不需要再被問惹。</description>
+總之，我從原始碼找到這個 SKIP_DATA_SYNC_CONFIRM 參數，搭配 direnv 設定後以後就不需要再被問惹。
+https://codepen.io/zackexplosion/pen/MWyPLrx
+拜託，問問題前先學會問問題的工具，把問題整理好別人才好幫助你，你這樣全部亂塞到github誰看的懂啦ww
+不過你的問題很簡單，只是value打成Value而已&amp;hellip;&amp;hellip;..</description>
       </item>
     
   </channel>

@@ -12,3 +12,8 @@ draft: false
 
 
 
+https://codepen.io/zackexplosion/pen/MWyPLrx
+
+拜託，問問題前先學會問問題的工具，把問題整理好別人才好幫助你，你這樣全部亂塞到github誰看的懂啦ww
+
+不過你的問題很簡單，只是```value```打成```Value```而已........
