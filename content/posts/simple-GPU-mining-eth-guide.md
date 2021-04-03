@@ -1,5 +1,5 @@
 ---
-title: "簡易又快速的顯卡以太幣挖礦教學 Simple GPU Mining Eth Guide"
+title: "每日出金！簡易又快速的顯卡以太幣挖礦教學"
 date: 2021-04-03T23:44:53+08:00
 draft: false
 ---
@@ -60,7 +60,9 @@ PhoenixMiner.exe -powlim -40 -pool ethash.poolbinance.com:8888 -wal yolo_zackexp
 pause
 ```
 
-接著關掉再執行，就可以挖到自己的帳號啦！過大約十分鐘後到 https://pool.binance.com/en/statistics 看應該就會有挖礦效能的圖表出現了！
+關掉再執行，就可以挖到自己的帳號啦！
+
+接著過大約十分鐘後到 https://pool.binance.com/en/statistics 應該就能看到挖礦效能的圖表出現了！
 
 ![](https://i.imgur.com/z9epmLS.png)
 
