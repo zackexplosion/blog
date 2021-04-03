@@ -9,3 +9,5 @@ publishDir = "docs"
   # User preferences (site/system settings) will still have priority over it
   # The default is false
   isDark = true
+
+googleAnalytics = "UA-8649920-11"
