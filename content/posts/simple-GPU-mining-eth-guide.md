@@ -24,11 +24,11 @@ draft: false
 
 ### 註冊幣安
 
-首先要註冊[幣安](https://www.binance.com/zh-TW/register?ref=72254434)的礦池帳號，這是我找到最最最最最最好用的礦池了，每日約台北時間下午四點不限金額出金，一張卡挖礦也可以每天看得到你的收益，更是摸的到！
+首先要註冊[幣安](https://www.binance.com/zh-TW/register?ref=TJTGK5HI)的礦池帳號，這是我找到最最最最最最好用的礦池了，每日約台北時間下午四點不限金額出金，一張卡挖礦也可以每天看得到你的收益，更是摸的到！
 
 主要的兩個步驟
 
-* 點這邊註冊 https://www.binance.com/zh-TW/register?ref=72254434
+* 點這邊註冊 https://www.binance.com/zh-TW/register?ref=TJTGK5HI
 * 註冊完成之後到這頁 https://pool.binance.com/en
 
 

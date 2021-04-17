@@ -23,7 +23,7 @@ draft: false
 
 ## 那麼，該怎麼交易呢？
 
-了解基本的概念後，就可以開始在[幣安](https://www.binance.com/zh-TW/register?ref=72254434)交易囉，如果你還不知道怎麼用顯卡挖以太幣，請參考[上一篇]({{< ref "/posts/simple-GPU-mining-eth-guide" >}} )。
+了解基本的概念後，就可以開始在[幣安](https://www.binance.com/zh-TW/register?ref=TJTGK5HI)交易囉，如果你還不知道怎麼用顯卡挖以太幣，請參考[上一篇]({{< ref "/posts/simple-GPU-mining-eth-guide" >}} )。
 
 首先，開啟 https://www.binance.com/en/my/wallet/account/overview 或直接打開幣安APP的[錢包總覽](https://www.binance.com/en/my/wallet/account/overview)，找到礦池帳號，按下提領(withdraw)
 
@@ -69,7 +69,8 @@ draft: false
 
 
 ## 相關連結
-* 幣安 https://www.binance.com/zh-TW/register?ref=72254434
+* 幣安 https://www.binance.com/zh-TW/register?ref=TJTGK5HI
 * MAX https://max.maicoin.com/signup?r=ab1234c1
 * 顯卡挖以太幣 [{{< ref "/posts/simple-GPU-mining-eth-guide" >}}]({{< ref "/posts/simple-GPU-mining-eth-guide" >}})
 ---
+
