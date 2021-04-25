@@ -1,8 +1,8 @@
 ---
 title: "如何入金？如何開始投資加密貨幣？How to Deposit? How to invest Crypto?"
 date: 2021-04-20T06:28:21+08:00
-tag: 挖礦,加密貨幣
-draft: false
+tags: [挖礦,加密貨幣]
+draft: true
 ---
 
 最近寫了幾篇教學，而大家最常碰到的問題就是如何入金加密貨幣
