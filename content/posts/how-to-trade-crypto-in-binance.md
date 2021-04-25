@@ -69,8 +69,8 @@ draft: false
 
 
 ## 相關連結
-* 幣安 https://www.binance.com/zh-TW/register?ref=TJTGK5HI
-* MAX https://max.maicoin.com/signup?r=ab1234c1
+* 幣安交易所 https://www.binance.com/zh-TW/register?ref=TJTGK5HI
+* MAX交易所 https://max.maicoin.com/signup?r=ab1234c1
 * 顯卡挖以太幣 [{{< ref "/posts/simple-GPU-mining-eth-guide" >}}]({{< ref "/posts/simple-GPU-mining-eth-guide" >}})
 ---
 
