@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>廢宅筆記</title>
+    <link>https://blog.zackexplosion.fun/tags/%E6%8C%96%E7%A4%A6%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3/</link>
+    <description></description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 03 Apr 2021 23:44:53 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/tags/%E6%8C%96%E7%A4%A6%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>每日出金！簡易又快速的以太幣顯卡挖礦教學</title>
+        <link>https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/</link>
+        <pubDate>Sat, 03 Apr 2021 23:44:53 +0800</pubDate>
+        
+        <guid>https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/</guid>
+        <description>幣安是我找到最最最最最最好用的礦池了，每日約台北時間下午四點不限金額出金，一張卡挖礦也可以每天看得到你的收益，更是摸的到！</description>
+      </item>
+    
+  </channel>
+</rss>

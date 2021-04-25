@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>廢宅筆記</title>
+    <link>https://blog.zackexplosion.fun/tags/%E6%8C%96%E7%A4%A6/</link>
+    <description></description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 26 Apr 2021 01:26:21 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/tags/%E6%8C%96%E7%A4%A6/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>如何設定 Windows 10 免密碼自動登入, 登入後自動執行挖礦</title>
+        <link>https://blog.zackexplosion.fun/posts/how-setup-windows-10-rig/</link>
+        <pubDate>Mon, 26 Apr 2021 01:26:21 +0800</pubDate>
+        
+        <guid>https://blog.zackexplosion.fun/posts/how-setup-windows-10-rig/</guid>
+        <description>大家安裝礦機的時候通常獨立一台，跟自己平常用的電腦分開對吧？
+接著分享我的設定流程，設定好之後萬一斷電，當機，只要重開機礦機就會自動開始挖礦！
+本篇使用 Windows10 ，其他OS並不在本篇範圍內
+設定 Windows 10 自動登入  微軟似乎在某個版本改掉免密碼登入的選項了，因此我們需要開啟 regedit 登錄檔編輯器。
+   開啟後，在上方路徑列輸入
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device
+(別傻傻地慢慢找，直接複製貼上啊ＸＤ)
+將 DevicePasswordLessBuildVersion 的數值改為 0，完成後按確定儲存。 重開機
+   重開機 後再次找到放大鏡輸入 netplwiz
+   首先取消 必須使用密碼登入.....，按下套用之後重新輸入密碼，按下確認，最後再次重開機
+   如果設定都正確，重開機後就不需要密碼登入了！
+設定自動啟動路經  接著打開你的挖礦程式，將執行擋建立捷徑
+   再打開一個資料夾，在路經輸入 shell:startup，把剛剛建立的捷徑複製過來就完成啦！
+   最後再次重開機，如果設定都正確，應該就會看到挖礦程式自動被執行了！
+   相關連結   幣安交易所 https://www.binance.com/zh-TW/register?ref=TJTGK5HI MAX交易所 https://max.maicoin.com/signup?r=ab1234c1 顯卡挖以太幣 https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/   </description>
+      </item>
+    
+      <item>
+        <title>挖到礦了，然後呢？</title>
+        <link>https://blog.zackexplosion.fun/posts/how-to-trade-crypto-in-binance/</link>
+        <pubDate>Wed, 07 Apr 2021 06:56:10 +0800</pubDate>
+        
+        <guid>https://blog.zackexplosion.fun/posts/how-to-trade-crypto-in-binance/</guid>
+        <description>剛接觸加密貨幣挖礦的你一定有很多疑問，例如：挖這個到底能幹嘛？要怎麼賣？怎麼拿來買東西？等等問題。這邊就用幾個簡單的概念讓你快速了解加密貨幣能幹嘛。</description>
+      </item>
+    
+      <item>
+        <title>每日出金！簡易又快速的以太幣顯卡挖礦教學</title>
+        <link>https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/</link>
+        <pubDate>Sat, 03 Apr 2021 23:44:53 +0800</pubDate>
+        
+        <guid>https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/</guid>
+        <description>幣安是我找到最最最最最最好用的礦池了，每日約台北時間下午四點不限金額出金，一張卡挖礦也可以每天看得到你的收益，更是摸的到！</description>
+      </item>
+    
+  </channel>
+</rss>

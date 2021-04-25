@@ -26,7 +26,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Dev
    如果設定都正確，重開機後就不需要密碼登入了！
 設定自動啟動路經  接著打開你的挖礦程式，將執行擋建立捷徑
    再打開一個資料夾，在路經輸入 shell:startup，把剛剛建立的捷徑複製過來就完成啦！
-   最後再次重開機，如果設定都正確你應該就會看到挖礦程式自動被執行了！
+   最後再次重開機，如果設定都正確，應該就會看到挖礦程式自動被執行了！
    相關連結   幣安交易所 https://www.binance.com/zh-TW/register?ref=TJTGK5HI MAX交易所 https://max.maicoin.com/signup?r=ab1234c1 顯卡挖以太幣 https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/   </description>
       </item>
     
