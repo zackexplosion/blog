@@ -2,93 +2,104 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>廢宅筆記</title>
-    <link>https://blog.zackexplosion.fun/</link>
+    <link>http://localhost:1313/</link>
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 26 Apr 2021 01:26:21 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2024 12:53:27 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to run Nodemon on Windows</title>
+        <link>http://localhost:1313/posts/running_nodemon_on_windows/</link>
+        <pubDate>Fri, 22 Mar 2024 12:53:27 +0800</pubDate>
+        
+        <guid>http://localhost:1313/posts/running_nodemon_on_windows/</guid>
+        <description>Installation To your current working directory then open terminal.
+npm install nodemon --save-dev If you install nodemon globally on windows it will require more step to let it works, So&amp;hellip;we want to install nodemon locally with the --save-dev argument.
+Configuration Open the package.json file. The content may look like this
+{ &amp;#34;devDependencies&amp;#34;: { &amp;#34;nodemon&amp;#34;: &amp;#34;^3.1.0&amp;#34; }, &amp;#34;dependencies&amp;#34;: { &amp;#34;dotenv&amp;#34;: &amp;#34;^16.4.5&amp;#34; } } Then Add the scrips attribute like this.</description>
+      </item>
+    
       <item>
         <title>如何設定 Windows 10 免密碼自動登入, 登入後自動執行挖礦</title>
-        <link>https://blog.zackexplosion.fun/posts/how-setup-windows-10-rig/</link>
+        <link>http://localhost:1313/posts/how-setup-windows-10-rig/</link>
         <pubDate>Mon, 26 Apr 2021 01:26:21 +0800</pubDate>
         
-        <guid>https://blog.zackexplosion.fun/posts/how-setup-windows-10-rig/</guid>
+        <guid>http://localhost:1313/posts/how-setup-windows-10-rig/</guid>
         <description>大家安裝礦機的時候通常獨立一台，跟自己平常用的電腦分開對吧？
 接著分享我的設定流程，設定好之後萬一斷電，當機，只要重開機礦機就會自動開始挖礦！
 本篇使用 Windows10 ，其他OS並不在本篇範圍內
-設定 Windows 10 自動登入  微軟似乎在某個版本改掉免密碼登入的選項了，因此我們需要開啟 regedit 登錄檔編輯器。
-   開啟後，在上方路徑列輸入
+設定 Windows 10 自動登入 微軟似乎在某個版本改掉免密碼登入的選項了，因此我們需要開啟 regedit 登錄檔編輯器。
+開啟後，在上方路徑列輸入
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device
 (別傻傻地慢慢找，直接複製貼上啊ＸＤ)
 將 DevicePasswordLessBuildVersion 的數值改為 0，完成後按確定儲存。 重開機
-   重開機 後再次找到放大鏡輸入 netplwiz
-   首先取消 必須使用密碼登入.....，按下套用之後重新輸入密碼，按下確認，最後再次重開機
-   如果設定都正確，重開機後就不需要密碼登入了！
-設定自動啟動路經  接著打開你的挖礦程式，將執行擋建立捷徑
-   再打開一個資料夾，在路經輸入 shell:startup，把剛剛建立的捷徑複製過來就完成啦！
-   最後再次重開機，如果設定都正確，應該就會看到挖礦程式自動被執行了！
-   相關連結   幣安交易所 https://www.binance.com/zh-TW/register?ref=TJTGK5HI MAX交易所 https://max.maicoin.com/signup?r=ab1234c1 顯卡挖以太幣 https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/   </description>
+重開機 後再次找到放大鏡輸入 netplwiz
+首先取消 必須使用密碼登入.....，按下套用之後重新輸入密碼，按下確認，最後再次重開機
+如果設定都正確，重開機後就不需要密碼登入了！
+設定自動啟動路經 接著打開你的挖礦程式，將執行擋建立捷徑
+再打開一個資料夾，在路經輸入 shell:startup，把剛剛建立的捷徑複製過來就完成啦！
+最後再次重開機，如果設定都正確，應該就會看到挖礦程式自動被執行了！
+相關連結 幣安交易所 https://www.binance.com/zh-TW/register?ref=TJTGK5HI MAX交易所 https://max.maicoin.com/signup?r=ab1234c1 顯卡挖以太幣 http://localhost:1313/posts/simple-gpu-mining-eth-guide/ </description>
       </item>
     
       <item>
         <title>挖到礦了，然後呢？</title>
-        <link>https://blog.zackexplosion.fun/posts/how-to-trade-crypto-in-binance/</link>
+        <link>http://localhost:1313/posts/how-to-trade-crypto-in-binance/</link>
         <pubDate>Wed, 07 Apr 2021 06:56:10 +0800</pubDate>
         
-        <guid>https://blog.zackexplosion.fun/posts/how-to-trade-crypto-in-binance/</guid>
+        <guid>http://localhost:1313/posts/how-to-trade-crypto-in-binance/</guid>
         <description>剛接觸加密貨幣挖礦的你一定有很多疑問，例如：挖這個到底能幹嘛？要怎麼賣？怎麼拿來買東西？等等問題。這邊就用幾個簡單的概念讓你快速了解加密貨幣能幹嘛。</description>
       </item>
     
       <item>
         <title>每日出金！簡易又快速的以太幣顯卡挖礦教學</title>
-        <link>https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/</link>
+        <link>http://localhost:1313/posts/simple-gpu-mining-eth-guide/</link>
         <pubDate>Sat, 03 Apr 2021 23:44:53 +0800</pubDate>
         
-        <guid>https://blog.zackexplosion.fun/posts/simple-gpu-mining-eth-guide/</guid>
+        <guid>http://localhost:1313/posts/simple-gpu-mining-eth-guide/</guid>
         <description>幣安是我找到最最最最最最好用的礦池了，每日約台北時間下午四點不限金額出金，一張卡挖礦也可以每天看得到你的收益，更是摸的到！</description>
       </item>
     
       <item>
         <title>AJAX載入測試檔案 Load Video With Axios</title>
-        <link>https://blog.zackexplosion.fun/posts/load-video-with-axios/</link>
+        <link>http://localhost:1313/posts/load-video-with-axios/</link>
         <pubDate>Thu, 17 Sep 2020 12:15:03 +0800</pubDate>
         
-        <guid>https://blog.zackexplosion.fun/posts/load-video-with-axios/</guid>
+        <guid>http://localhost:1313/posts/load-video-with-axios/</guid>
         <description>昨天想說把檔案快取在 localstorage 可以減少上傳的步驟，結果被卡小問題卡著，後來想到直接用 ajax 載入本地檔案不是更輕鬆嗎？
 於是昨天的全部廢掉，改成這樣&amp;hellip;&amp;hellip;&amp;hellip;.
-if (DEV) { const testvideo = await request({ url: &amp;#34;/test.mov&amp;#34;, method: &amp;#34;GET&amp;#34;, responseType: &amp;#34;blob&amp;#34; // important  }); this.$refs.video.src = URL.createObjectURL(testvideo.data); this.video = this.$refs.video; const buffer = await testvideo.data.arrayBuffer(); handleAudio.call(this, buffer); } 這樣可以省掉很多點來點去的時間&amp;hellip;.</description>
+if (DEV) { const testvideo = await request({ url: &amp;#34;/test.mov&amp;#34;, method: &amp;#34;GET&amp;#34;, responseType: &amp;#34;blob&amp;#34; // important }); this.$refs.video.src = URL.createObjectURL(testvideo.data); this.video = this.$refs.video; const buffer = await testvideo.data.arrayBuffer(); handleAudio.call(this, buffer); } 這樣可以省掉很多點來點去的時間&amp;hellip;.</description>
       </item>
     
       <item>
         <title>加速 Javascript File Upload 開發流程/檔案預先選取/檔案儲存localstorage</title>
-        <link>https://blog.zackexplosion.fun/posts/javascript-file-upload-cache/</link>
+        <link>http://localhost:1313/posts/javascript-file-upload-cache/</link>
         <pubDate>Wed, 16 Sep 2020 13:32:42 +0800</pubDate>
         
-        <guid>https://blog.zackexplosion.fun/posts/javascript-file-upload-cache/</guid>
+        <guid>http://localhost:1313/posts/javascript-file-upload-cache/</guid>
         <description>每次寫上傳檔案的功能都很靠北的要一直自己重新點，累死，研究了一下怎麼存在localstorage，這樣只要選一次，之後reload就可以省略掉這步驟了。
-class DevCacheFile { key = &amp;#34;temp_file_cache&amp;#34;; constructor() {} save(file, result) { // save dev file to cache  const dataToSave = JSON.stringify({ type: file.type, blob: Array.from(new Uint8Array(result)) }); localStorage.setItem(this.key, dataToSave); } restore() { var data = localStorage.getItem(this.key); if (!data) return null; data = JSON.parse(data); var blob = new Uint8Array(data.blob).buffer; blob = new Blob([blob]); var file = new File([blob], { type: data.type }); return file; } } 用法大概這樣
-// whatever.js  var file var devCacheFile = new DevCacheFile() var reader = new FileReader() reader.</description>
+class DevCacheFile { key = &amp;#34;temp_file_cache&amp;#34;; constructor() {} save(file, result) { // save dev file to cache const dataToSave = JSON.stringify({ type: file.type, blob: Array.from(new Uint8Array(result)) }); localStorage.setItem(this.key, dataToSave); } restore() { var data = localStorage.getItem(this.key); if (!data) return null; data = JSON.parse(data); var blob = new Uint8Array(data.blob).buffer; blob = new Blob([blob]); var file = new File([blob], { type: data.type }); return file; } } 用法大概這樣
+// whatever.js var file var devCacheFile = new DevCacheFile() var reader = new FileReader() reader.</description>
       </item>
     
       <item>
         <title>Macos Keyrepeat 速度調整</title>
-        <link>https://blog.zackexplosion.fun/posts/macos-keyrepeat/</link>
+        <link>http://localhost:1313/posts/macos-keyrepeat/</link>
         <pubDate>Tue, 01 Sep 2020 11:09:55 +0800</pubDate>
         
-        <guid>https://blog.zackexplosion.fun/posts/macos-keyrepeat/</guid>
+        <guid>http://localhost:1313/posts/macos-keyrepeat/</guid>
         <description>MacOS 預設的 keyrepeat 實在靠北慢，用下面的指令可以設定超過GUI能設定的上限
 defaults write -g InitialKeyRepeat -int 12 # normal minimum is 15 (225 ms) defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms) 這是我自己習慣的設定，詳細請參考下方來源連結 https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x</description>
       </item>
     
       <item>
         <title>Capistrano-db-task sync disable confirm 關閉確認視窗</title>
-        <link>https://blog.zackexplosion.fun/posts/capistrano-db-task-confrim/</link>
+        <link>http://localhost:1313/posts/capistrano-db-task-confrim/</link>
         <pubDate>Tue, 01 Sep 2020 09:49:26 +0800</pubDate>
         
-        <guid>https://blog.zackexplosion.fun/posts/capistrano-db-task-confrim/</guid>
+        <guid>http://localhost:1313/posts/capistrano-db-task-confrim/</guid>
         <description>工作上很常用到 cap production db:pull 來同步 production 環境上使用者產生的資料，雖然多問無礙，但每次都問實在很煩，特別是這種要跑一陣子 task 常常執行下去後就去幹別的事。
-總之，我從原始碼找到這個 SKIP_DATA_SYNC_CONFIRM 參數，搭配 direnv 設定後以後就不需要再被問惹。
-  </description>
+總之，我從原始碼找到這個 SKIP_DATA_SYNC_CONFIRM 參數，搭配 direnv 設定後以後就不需要再被問惹。</description>
       </item>
     
   </channel>
