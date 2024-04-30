@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="dark">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Hugo 0.125.4">
+<meta name="theme" content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+
+
+<title>How To Setup Node.js on Brand New Mac</title>
+
+
+
+
+
+<meta name="robots" content="index follow">
+
+
+
+
+  
+    <link rel="canonical" href="https://blog.zackexplosion.fun/posts/setup-nodejs-on-barnd-new-mac/">
+  
+
+
+
+
+
+
+
+
+<meta property="og:site_name" content="廢宅筆記">
+<meta property="og:title" content="How To Setup Node.js on Brand New Mac">
+
+  <meta property="og:url" content="https://blog.zackexplosion.fun/posts/setup-nodejs-on-barnd-new-mac/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:type" content="article">
+  
+  
+    <meta property="article:published_time" content="2024-04-30">
+    <meta property="article:modified_time" content="2024-04-30">
+    <meta property="og:updated_time" content="2024-04-30">
+  
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="theme-color" content="#222">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebSite",
+        "@id": "https://blog.zackexplosion.fun/"
+      },
+      "headline": "How To Setup Node.js on Brand New Mac",
+      "description": "",
+      
+      "url": "https://blog.zackexplosion.fun/posts/setup-nodejs-on-barnd-new-mac/",
+      "inLanguage": "en",
+      "datePublished": "2024-04-30",
+      "dateModified": "2024-04-30",
+      "wordCount" : "370",
+      "publisher": {
+        "@type": "Person",
+        "name": ""
+      },
+      "author": {
+        "@type": "Person",
+        "name": "",
+        
+        
+      }
+    }
+  </script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://blog.zackexplosion.fun/css/main.min.b150cc6f81019af72a304bebc491926a4a3823722366ae014ef294070cdb615e.css" integrity="sha256-sVDMb4EBmvcqMEvrxJGSako4I3IjZq4BTvKUBwzbYV4=" crossorigin="anonymous">
+
+
+
+<noscript>
+
+  
+  
+
+  
+    <meta name="theme-color" content="1dbc91" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="1f676b" media="(prefers-color-scheme: light)">
+  
+
+  
+  <link rel="stylesheet" href="https://blog.zackexplosion.fun/css/noscript.min.2499e50c1e7db5bd60d614586ede6d26726c202e8a33c6c4d39e0c59b23eec48.css" integrity="sha256-JJnlDB59tb1g1hRYbt5tJnJsIC6KM8bE054MWbI&#43;7Eg=" crossorigin="anonymous">
+
+</noscript>
+
+
+
+<link rel="preload" href="/fonts/open-sans-v34-latin-700.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/open-sans-v34-latin-italic.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/open-sans-v34-latin-regular.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/oswald-v29-latin-700.woff2" as="font" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="https://blog.zackexplosion.fun/js/main.e825f7044baffdc7a30a63e6a25f9fb77c953bb2609eb106c059c15274e099a5.js" integrity="sha256-6CX3BEuv/cejCmPmol&#43;ft3yVO7JgnrEGwFnBUnTgmaU=" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      
+
+  <a href="/">廢宅筆記</a>
+
+
+
+
+
+    </header>
+
+    <div class="filler">
+      
+
+  <main>
+    <article>
+      <header>
+        
+        <h1>How To Setup Node.js on Brand New Mac</h1>
+
+        
+          <p>
+            
+              Published on <time datetime="2024-04-30">2024-04-30</time>
+            
+          </p>
+        
+        
+        
+        
+      </header>
+    
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Want to be a JavaScript programmer?</p>
+<p>Let&rsquo;s start with the environment setup!</p>
+
+
+
+
+
+
+
+
+
+  <h2 id="install-oh-my-zsh"><a class="anchor" href="#install-oh-my-zsh" title='Anchor for: Install oh-my-zsh.'><svg aria-hidden="true"><use xlink:href="/img/bundle.min.ae45e7a9a0a65150dd900a58f35fe84d.svg#hashtag"/></svg></a> Install oh-my-zsh</h2> 
+
+<p>Run the command in your terminal.</p>
+<pre aria-label="Box containing code sample." tabindex=0><code>sh -c &#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;
+</code></pre>
+
+
+
+
+
+
+
+
+  <h2 id="what-is-oh-my-zsh"><a class="anchor" href="#what-is-oh-my-zsh" title='Anchor for: What is oh-my-zsh?.'><svg aria-hidden="true"><use xlink:href="/img/bundle.min.ae45e7a9a0a65150dd900a58f35fe84d.svg#hashtag"/></svg></a> What is oh-my-zsh?</h2> 
+
+<p>Once ZSH installed, your terminal shell will become the talk of the town or your money back! With each keystroke in your command prompt, you&rsquo;ll take advantage of the hundreds of powerful plugins and beautiful themes. Strangers will come up to you in cafés and ask you, &ldquo;that is amazing! are you some sort of genius?&rdquo;</p>
+<p>From the website <a href="https://ohmyz.sh/">https://ohmyz.sh/</a></p>
+<p>Anyway, it helps us to setup shell config file for the next step, NVM.</p>
+
+
+
+
+
+
+
+
+
+  <h2 id="install-nvm"><a class="anchor" href="#install-nvm" title='Anchor for: Install NVM.'><svg aria-hidden="true"><use xlink:href="/img/bundle.min.ae45e7a9a0a65150dd900a58f35fe84d.svg#hashtag"/></svg></a> Install NVM</h2> 
+
+<p>Node Version Manager, we will use this to control the versions of node.js and we will explain why later.</p>
+<pre aria-label="Box containing code sample." tabindex=0><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+</code></pre><p>Install command from the repo <a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a></p>
+
+
+
+
+
+
+
+
+
+  <h2 id="what-now"><a class="anchor" href="#what-now" title='Anchor for: What now?.'><svg aria-hidden="true"><use xlink:href="/img/bundle.min.ae45e7a9a0a65150dd900a58f35fe84d.svg#hashtag"/></svg></a> What now?</h2> 
+
+<p>After reopen the terminal session, we should be able to use the command <code>nvm</code></p>
+<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <picture>
+    
+      
+      
+        <source
+          srcset='/posts/setup-nodejs-on-barnd-new-mac/001_hu0e54d75b135ad968efc6ccc0a778f64b_133794_1280x0_resize_q75_h2_box.webp 1280w, /posts/setup-nodejs-on-barnd-new-mac/001_hu0e54d75b135ad968efc6ccc0a778f64b_133794_960x0_resize_q75_h2_box.webp 960w, /posts/setup-nodejs-on-barnd-new-mac/001_hu0e54d75b135ad968efc6ccc0a778f64b_133794_640x0_resize_q90_h2_box.webp 640w'
+          type="image/webp"
+        >
+      
+      
+      
+      <source
+        srcset='/posts/setup-nodejs-on-barnd-new-mac/001_hu0e54d75b135ad968efc6ccc0a778f64b_133794_1280x0_resize_q75_box.jpg 1280w, /posts/setup-nodejs-on-barnd-new-mac/001_hu0e54d75b135ad968efc6ccc0a778f64b_133794_960x0_resize_q75_box.jpg 960w, /posts/setup-nodejs-on-barnd-new-mac/001_hu0e54d75b135ad968efc6ccc0a778f64b_133794_640x0_resize_q90_box.jpg 640w'
+        type="image/jpeg"
+      >
+      
+      <img
+        
+        loading="lazy"
+        
+          src="/posts/setup-nodejs-on-barnd-new-mac/001_hu0e54d75b135ad968efc6ccc0a778f64b_133794_640x0_resize_q90_box.jpg"
+          width="640"
+          height="205"
+        
+        
+      />
+      
+    </picture>
+    
+  
+  
+
+</p>
+<p>If you can see those messages, NVM is setup successfully.</p>
+<p>Than run the following command, <code>22</code> is the version of the node.js you want to install</p>
+<p><code>nvm install 22</code></p>
+<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <picture>
+    
+      
+      
+        <source
+          srcset='/posts/setup-nodejs-on-barnd-new-mac/002_hu524b101cb58b49c6eb38e6f71ab956ec_71191_960x0_resize_q75_h2_box.webp 960w, /posts/setup-nodejs-on-barnd-new-mac/002_hu524b101cb58b49c6eb38e6f71ab956ec_71191_640x0_resize_q90_h2_box.webp 640w'
+          type="image/webp"
+        >
+      
+      
+      
+      <source
+        srcset='/posts/setup-nodejs-on-barnd-new-mac/002_hu524b101cb58b49c6eb38e6f71ab956ec_71191_960x0_resize_q75_box.jpg 960w, /posts/setup-nodejs-on-barnd-new-mac/002_hu524b101cb58b49c6eb38e6f71ab956ec_71191_640x0_resize_q90_box.jpg 640w'
+        type="image/jpeg"
+      >
+      
+      <img
+        
+        loading="lazy"
+        
+          src="/posts/setup-nodejs-on-barnd-new-mac/002_hu524b101cb58b49c6eb38e6f71ab956ec_71191_640x0_resize_q90_box.jpg"
+          width="640"
+          height="142"
+        
+        
+      />
+      
+    </picture>
+    
+  
+  
+
+</p>
+<p>Now we can do this to select the version of node.js</p>
+<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <picture>
+    
+      
+      
+        <source
+          srcset='/posts/setup-nodejs-on-barnd-new-mac/003_hu0130655918084ff78bb95a914f0946e8_22968_536x0_resize_q75_h2_box.webp'
+          type="image/webp"
+        >
+      
+      
+      
+      <source
+        srcset='/posts/setup-nodejs-on-barnd-new-mac/003_hu0130655918084ff78bb95a914f0946e8_22968_536x0_resize_q75_box.jpg'
+        type="image/jpeg"
+      >
+      
+      <img
+        
+        loading="lazy"
+        
+          src="/posts/setup-nodejs-on-barnd-new-mac/003_hu0130655918084ff78bb95a914f0946e8_22968_536x0_resize_q75_box.jpg"
+          width="536"
+          height="104"
+        
+        
+      />
+      
+    </picture>
+    
+  
+  
+
+</p>
+<p>To verify the current node version. if following command shows up, you got it!</p>
+<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <picture>
+    
+      
+      
+        <source
+          srcset='/posts/setup-nodejs-on-barnd-new-mac/image-1_hudb2e6c583f2bcdd0f118bab0667b9ab5_26203_508x0_resize_q75_h2_box_3.webp'
+          type="image/webp"
+        >
+      
+      
+      
+      <source
+        srcset='/posts/setup-nodejs-on-barnd-new-mac/image-1_hudb2e6c583f2bcdd0f118bab0667b9ab5_26203_508x0_resize_box_3.png'
+        type="image/png"
+      >
+      
+      <img
+        
+        loading="lazy"
+        
+          src="/posts/setup-nodejs-on-barnd-new-mac/image-1_hudb2e6c583f2bcdd0f118bab0667b9ab5_26203_508x0_resize_box_3.png"
+          width="508"
+          height="70"
+        
+        alt="alt text"
+      />
+      
+    </picture>
+    
+  
+  
+
+</p>
+
+
+
+
+
+
+
+
+
+  <h2 id="but-why"><a class="anchor" href="#but-why" title='Anchor for: But why?.'><svg aria-hidden="true"><use xlink:href="/img/bundle.min.ae45e7a9a0a65150dd900a58f35fe84d.svg#hashtag"/></svg></a> But why?</h2> 
+
+<p>So&hellip;.why we need NVM? why not just install node.js to the system?</p>
+<p>For example, we just install the version 22 of node.js right? How about you are running a project that requires other version of node.js?</p>
+<p>How to switch the node.js versions between different projects?</p>
+<p>If you just install the node.js to the system, you have to reinstall node.js every time you change the working directory.</p>
+<p>That will be too annoying, so that&rsquo;s why we use NVM to switch between the different versions of node.js.</p>
+
+
+
+
+
+
+
+
+
+  <h2 id="nvmrc"><a class="anchor" href="#nvmrc" title='Anchor for: .nvmrc.'><svg aria-hidden="true"><use xlink:href="/img/bundle.min.ae45e7a9a0a65150dd900a58f35fe84d.svg#hashtag"/></svg></a> .nvmrc</h2> 
+
+<p>WTH is this lol, check the following screenshot</p>
+<p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <picture>
+    
+      
+      
+        <source
+          srcset='/posts/setup-nodejs-on-barnd-new-mac/dot_nvm_001_hu23ce3bed540490ead6c807dfeaf3aa0c_103115_960x0_resize_q75_h2_box.webp 960w, /posts/setup-nodejs-on-barnd-new-mac/dot_nvm_001_hu23ce3bed540490ead6c807dfeaf3aa0c_103115_640x0_resize_q90_h2_box.webp 640w'
+          type="image/webp"
+        >
+      
+      
+      
+      <source
+        srcset='/posts/setup-nodejs-on-barnd-new-mac/dot_nvm_001_hu23ce3bed540490ead6c807dfeaf3aa0c_103115_960x0_resize_q75_box.jpg 960w, /posts/setup-nodejs-on-barnd-new-mac/dot_nvm_001_hu23ce3bed540490ead6c807dfeaf3aa0c_103115_640x0_resize_q90_box.jpg 640w'
+        type="image/jpeg"
+      >
+      
+      <img
+        
+        loading="lazy"
+        
+          src="/posts/setup-nodejs-on-barnd-new-mac/dot_nvm_001_hu23ce3bed540490ead6c807dfeaf3aa0c_103115_640x0_resize_q90_box.jpg"
+          width="640"
+          height="263"
+        
+        
+      />
+      
+    </picture>
+    
+  
+  
+
+</p>
+<p>Assume we are running a project requires node.js at version 18, we can just put a file named <code>.nvmrc</code> in the root directory of the project.</p>
+<p>Then write the node.js version that required in there. Which is 18 here.</p>
+<p>After this, every time we enter the directory, the shell will automatically switch the node.js version for us!</p>
+<p>If something repeats too many times, don&rsquo;t do it yourself!</p>
+<p>See more: <a href="https://github.com/nvm-sh/nvm?tab=readme-ov-file#nvmrc">https://github.com/nvm-sh/nvm?tab=readme-ov-file#nvmrc</a></p>
+
+
+
+    </article>
+  </main>
+
+
+    </div>
+    
+    <footer>
+      
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="req-js">
+  <button class="outline-dashed" title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="/img/bundle.min.ae45e7a9a0a65150dd900a58f35fe84d.svg#adjust"/></svg></button><input class="outline-dashed" type="color" list="presets" value="1dbc91" title="Change accent color." aria-label="Change accent color."><datalist id="presets"><option value="1f676b"><option value="1dbc91"></datalist>
+</div>
+
+
+
+
+
+    </footer>
+    
+    
+    
+
+    
+    
+
+  </body>
+</html>
