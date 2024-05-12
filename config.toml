@@ -1,6 +1,6 @@
 baseURL = "https://blog.zackexplosion.fun"
 languageCode = "zh-tw"
-title = "廢宅筆記"
+title = "Zackexplosion 廢宅筆記"
 theme = "color-your-world"
 publishDir = "docs"
 [params.style]
