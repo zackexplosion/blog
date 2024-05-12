@@ -6,7 +6,18 @@
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 12 May 2024 21:35:12 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/tags/ai-blogging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 May 2024 21:35:47 +0800</lastBuildDate><atom:link href="https://blog.zackexplosion.fun/tags/ai-blogging/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>AI Blogging 2024-05-12T213547</title>
+        <link>https://blog.zackexplosion.fun/posts/ai_blogging_2024-05-12t213547/</link>
+        <pubDate>Sun, 12 May 2024 21:35:47 +0800</pubDate>
+        
+        <guid>https://blog.zackexplosion.fun/posts/ai_blogging_2024-05-12t213547/</guid>
+        <description>English: Node.js is a popular open-source, cross-platform JavaScript runtime environment that allows developers to build server-side applications. When encountering bugs in Node.js, developers can utilize tools like debuggers, console.log statements, and testing frameworks to identify and fix issues in the code. By thoroughly understanding the error messages and the context in which the bugs occur, developers can troubleshoot and resolve them effectively.
+Chinese Traditional: Node.js 是一個流行的開源、跨平台的JavaScript運行時環境，允許開發人員構建伺服器端應用程序。在 Node.js 中遇到錯誤時，開發人員可以利用調試器、console.log語句和測試框架等工具來識別並修復代碼中的問題。通過深入理解錯誤消息和錯誤發生的上下文，開發人員可以有效地進行故障排除和修復。
+Russian: Node.js - это популярная открытая кроссплатформенная среда выполнения JavaScript, которая позволяет разработчикам создавать серверные приложения.</description>
+      </item>
+    
       <item>
         <title>AI Blogging 2024-05-12T213512</title>
         <link>https://blog.zackexplosion.fun/posts/ai_blogging_2024-05-12t213512/</link>
