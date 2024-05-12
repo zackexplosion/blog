@@ -9,5 +9,6 @@ publishDir = "docs"
   # User preferences (site/system settings) will still have priority over it
   # The default is false
   isDark = true
+  darkAccent = "#4a86e8"
 
 googleAnalytics = "UA-8649920-11"
